@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kodekreatif — Software Development Company</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════════ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">
+        <svg class="nav__logo-img" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Kodekreatif logo">
+          <rect x="14" y="22" width="10" height="56" rx="2" fill="currentColor"/>
+          <rect x="76" y="22" width="10" height="56" rx="2" fill="currentColor"/>
+          <path d="M36 30 L20 50 L36 70" stroke="currentColor" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+          <path d="M64 30 L80 50 L64 70" stroke="currentColor" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+          <rect x="34" y="46" width="32" height="8" rx="2" fill="currentColor"/>
+        </svg>
+        <span class="nav__logo-text">Kodekreatif</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#work">Work</a>
+        <a href="#clients">Clients</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn--sm btn--outline">Let's Talk</a>
+      </nav>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="menuClose">✕</button>
+    <nav class="mobile-menu__links">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#work">Work</a>
+      <a href="#clients">Clients</a>
+      <a href="#about">About</a>
+      <a href="#contact">Let's Talk</a>
+    </nav>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="container hero__inner">
+      <div class="hero__badge">
+        <span class="badge-dot"></span> Open for new projects
+      </div>
+      <h1 class="hero__headline">
+        We Build Software<br />
+        <span class="gradient-text">That Scales.</span>
+      </h1>
+      <p class="hero__sub">
+        Kodekreatif is a software development studio crafting high-performance web apps, mobile experiences, and scalable backend systems for forward-thinking businesses.
+      </p>
+      <div class="hero__cta">
+        <a href="#contact" class="btn btn--primary btn--lg">Start a Project</a>
+        <a href="#work" class="btn btn--ghost btn--lg">View Our Work</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__number">50+</span>
+          <span class="stat__label">Projects Delivered</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__number">30+</span>
+          <span class="stat__label">Happy Clients</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__number">6+</span>
+          <span class="stat__label">Years of Experience</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__number">99%</span>
+          <span class="stat__label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       SERVICES
+  ══════════════════════════════════════════════ -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">End-to-End Software Solutions</h2>
+        <p class="section-sub">From concept to deployment, we cover every layer of modern software development.</p>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-card" data-delay="0">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="28" rx="4" stroke="currentColor" stroke-width="2.5"/><path d="M16 44h16M24 36v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M14 22l5 5-5 5M26 27h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Web Application Dev</h3>
+          <p>Custom, high-performance web apps built with React, Next.js, and modern backend frameworks. Scalable, fast, and built for growth.</p>
+          <ul class="service-card__tags">
+            <li>React / Next.js</li><li>Node.js</li><li>REST & GraphQL</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-delay="100">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M20 8h8M24 8v4M10 16h28a2 2 0 012 2v18a2 2 0 01-2 2H10a2 2 0 01-2-2V18a2 2 0 012-2z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M18 28l4-4 4 4 4-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Custom GoHighLevel Plugin</h3>
+          <p>Extend your GoHighLevel CRM with tailor-made plugins, custom workflows, and deep integrations built for your agency's exact needs.</p>
+          <ul class="service-card__tags">
+            <li>GoHighLevel</li><li>CRM</li><li>Automation</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-delay="200">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="12" width="36" height="26" rx="4" stroke="currentColor" stroke-width="2.5"/><path d="M6 20h36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M14 28h4M14 32h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="36" cy="30" r="5" stroke="currentColor" stroke-width="2.5"/><path d="M39.5 33.5l3 3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Payment Gateway API</h3>
+          <p>Seamless payment integration with Stripe, Midtrans, PayPal, and more. Secure, PCI-compliant, and optimised for high conversion.</p>
+          <ul class="service-card__tags">
+            <li>Stripe</li><li>Midtrans</li><li>PayPal</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-delay="0">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="6" width="32" height="36" rx="4" stroke="currentColor" stroke-width="2.5"/><path d="M16 18h16M16 24h16M16 30h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="36" cy="36" r="8" fill="currentColor" fill-opacity=".12" stroke="currentColor" stroke-width="2.5"/><path d="M33 36h6M36 33v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Custom WordPress Plugin</h3>
+          <p>Bespoke WordPress plugins that add powerful functionality, connect third-party services, and integrate cleanly with your existing site.</p>
+          <ul class="service-card__tags">
+            <li>PHP</li><li>WordPress</li><li>WooCommerce</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-delay="100">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="10" cy="24" r="5" stroke="currentColor" stroke-width="2.5"/><circle cx="38" cy="10" r="5" stroke="currentColor" stroke-width="2.5"/><circle cx="38" cy="38" r="5" stroke="currentColor" stroke-width="2.5"/><path d="M15 24h8M23 14l8-4M23 34l8 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><rect x="23" y="18" width="10" height="12" rx="2" stroke="currentColor" stroke-width="2.5"/></svg>
+          </div>
+          <h3>Automation n8n</h3>
+          <p>Automate repetitive tasks and connect all your tools with n8n workflows — from lead capture and nurturing to data sync and reporting.</p>
+          <ul class="service-card__tags">
+            <li>n8n</li><li>Zapier</li><li>Make</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-delay="200">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 38V28l10-8 10 8V38H8z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 38v-8h8v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M28 30h10V14L24 8 10 14v14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M34 38v-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Funnel & E-commerce</h3>
+          <p>High-converting sales funnels and e-commerce stores engineered to maximise revenue at every stage of your customer's journey.</p>
+          <ul class="service-card__tags">
+            <li>ClickFunnels</li><li>Shopify</li><li>WooCommerce</li>
+          </ul>
+        </div>
+
+        <div class="service-card service-card--last" data-delay="0">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M6 36V16a2 2 0 012-2h32a2 2 0 012 2v20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M2 36h44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M18 22h12M18 28h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Tech Consultation</h3>
+          <p>Strategic technology guidance, architecture reviews, and expert advice to help you make the right decisions — faster and with confidence.</p>
+          <ul class="service-card__tags">
+            <li>Architecture</li><li>Code Review</li><li>Strategy</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       PROCESS
+  ══════════════════════════════════════════════ -->
+  <section class="process section section--blue" id="process">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <span class="section-tag section-tag--light">How We Work</span>
+        <h2 class="section-title">Our Proven Process</h2>
+        <p class="section-sub">A structured, transparent approach that eliminates guesswork and delivers results.</p>
+      </div>
+      <div class="process__steps">
+        <div class="process-step">
+          <div class="process-step__num">01</div>
+          <h3>Discovery & Planning</h3>
+          <p>We deep-dive into your business goals, audience, and technical requirements to map the perfect solution before writing a single line of code.</p>
+        </div>
+        <div class="process-step__arrow">→</div>
+        <div class="process-step">
+          <div class="process-step__num">02</div>
+          <h3>Design & Prototype</h3>
+          <p>Our designers create interactive wireframes and high-fidelity mockups so you see exactly what you're getting before development begins.</p>
+        </div>
+        <div class="process-step__arrow">→</div>
+        <div class="process-step">
+          <div class="process-step__num">03</div>
+          <h3>Build & Iterate</h3>
+          <p>Agile sprints, daily standups, and weekly demos keep you in the loop. We ship working features continuously so you always see progress.</p>
+        </div>
+        <div class="process-step__arrow">→</div>
+        <div class="process-step">
+          <div class="process-step__num">04</div>
+          <h3>Launch & Support</h3>
+          <p>Smooth deployment, load testing, monitoring setup, and ongoing maintenance ensure your product thrives long after launch day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       WORK / PORTFOLIO
+  ══════════════════════════════════════════════ -->
+  <section class="work section" id="work">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Work</span>
+        <h2 class="section-title">Selected Projects</h2>
+        <p class="section-sub">A glimpse into the products we've designed, built, and launched.</p>
+      </div>
+      <div class="work__grid">
+
+        <article class="work-card work-card--wide">
+          <div class="work-card__img work-card__img--1">
+            <div class="work-card__overlay">
+              <span class="work-card__tag">Web App · E-Commerce</span>
+              <h3>NexaMart Platform</h3>
+              <p>A full-stack e-commerce platform with real-time inventory management, multi-vendor support, and an AI-powered recommendation engine. 300% increase in conversion rate.</p>
+              <div class="work-card__stack"><span>Next.js</span><span>Node.js</span><span>PostgreSQL</span><span>Redis</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card__img work-card__img--2">
+            <div class="work-card__overlay">
+              <span class="work-card__tag">Mobile · FinTech</span>
+              <h3>PaySwift Mobile Banking</h3>
+              <p>Cross-platform mobile banking app with biometric auth, real-time transfers, and smart budgeting tools. 100k+ active users.</p>
+              <div class="work-card__stack"><span>React Native</span><span>Go</span><span>AWS</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card__img work-card__img--3">
+            <div class="work-card__overlay">
+              <span class="work-card__tag">SaaS · HR Tech</span>
+              <h3>TeamPulse HR Suite</h3>
+              <p>End-to-end HR management SaaS covering recruitment, payroll, attendance, and performance reviews for mid-size enterprises.</p>
+              <div class="work-card__stack"><span>Vue.js</span><span>Django</span><span>Docker</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card__img work-card__img--4">
+            <div class="work-card__overlay">
+              <span class="work-card__tag">Web · Logistics</span>
+              <h3>RouteIQ Logistics Dashboard</h3>
+              <p>Real-time fleet tracking dashboard with predictive analytics and automated route optimization, reducing delivery costs by 40%.</p>
+              <div class="work-card__stack"><span>React</span><span>Python</span><span>Kafka</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card work-card--wide">
+          <div class="work-card__img work-card__img--5">
+            <div class="work-card__overlay">
+              <span class="work-card__tag">Platform · EdTech</span>
+              <h3>Learnify LMS Platform</h3>
+              <p>A feature-rich learning management system supporting live classes, video courses, interactive assessments, and certificate issuance. 50k+ learners onboarded within 3 months.</p>
+              <div class="work-card__stack"><span>Next.js</span><span>Node.js</span><span>MongoDB</span><span>WebRTC</span></div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       CLIENTS / LOGO WALL
+  ══════════════════════════════════════════════ -->
+  <section class="clients section" id="clients">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Trusted By</span>
+        <h2 class="section-title">Companies We've Worked With</h2>
+        <p class="section-sub">We're proud to have partnered with industry-leading businesses across various sectors.</p>
+      </div>
+      <div class="clients__logo-grid">
+        <div class="client-logo"><svg viewBox="0 0 120 40" fill="none"><rect x="4" y="8" width="24" height="24" rx="4" fill="#2563EB" opacity=".15"/><text x="36" y="26" font-family="Inter,sans-serif" font-weight="700" font-size="15" fill="currentColor">NexaGroup</text></svg></div>
+        <div class="client-logo"><svg viewBox="0 0 120 40" fill="none"><circle cx="16" cy="20" r="12" fill="#2563EB" opacity=".15"/><text x="36" y="26" font-family="Inter,sans-serif" font-weight="700" font-size="15" fill="currentColor">PaySwift</text></svg></div>
+        <div class="client-logo"><svg viewBox="0 0 120 40" fill="none"><polygon points="16,8 28,32 4,32" fill="#2563EB" opacity=".15"/><text x="36" y="26" font-family="Inter,sans-serif" font-weight="700" font-size="15" fill="currentColor">TriForce</text></svg></div>
+        <div class="client-logo"><svg viewBox="0 0 120 40" fill="none"><rect x="4" y="8" width="24" height="24" rx="12" fill="#2563EB" opacity=".15"/><text x="36" y="26" font-family="Inter,sans-serif" font-weight="700" font-size="15" fill="currentColor">Circletech</text></svg></div>
+        <div class="client-logo"><svg viewBox="0 0 120 40" fill="none"><path d="M16 8l12 12-12 12L4 20z" fill="#2563EB" opacity=".15"/><text x="36" y="26" font-family="Inter,sans-serif" font-weight="700" font-size="15" fill="currentColor">DiamondIO</text></svg></div>
+        <div class="client-logo"><svg viewBox="0 0 120 40" fill="none"><rect x="4" y="12" width="24" height="16" rx="2" fill="#2563EB" opacity=".15"/><text x="36" y="26" font-family="Inter,sans-serif" font-weight="700" font-size="15" fill="currentColor">BuildStack</text></svg></div>
+        <div class="client-logo"><svg viewBox="0 0 120 40" fill="none"><circle cx="16" cy="20" r="10" fill="none" stroke="#2563EB" stroke-width="2" opacity=".4"/><text x="36" y="26" font-family="Inter,sans-serif" font-weight="700" font-size="15" fill="currentColor">Orbitals</text></svg></div>
+        <div class="client-logo"><svg viewBox="0 0 120 40" fill="none"><path d="M4 20h24M16 8v24" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" opacity=".5"/><text x="36" y="26" font-family="Inter,sans-serif" font-weight="700" font-size="15" fill="currentColor">CrossLink</text></svg></div>
+        <div class="client-logo"><svg viewBox="0 0 120 40" fill="none"><rect x="4" y="8" width="24" height="24" rx="4" fill="#2563EB" opacity=".1"/><rect x="8" y="12" width="16" height="16" rx="2" fill="#2563EB" opacity=".2"/><text x="36" y="26" font-family="Inter,sans-serif" font-weight="700" font-size="15" fill="currentColor">Layersoft</text></svg></div>
+        <div class="client-logo"><svg viewBox="0 0 120 40" fill="none"><path d="M4 28l12-20 12 20z" fill="#2563EB" opacity=".15"/><text x="36" y="26" font-family="Inter,sans-serif" font-weight="700" font-size="15" fill="currentColor">Apex Labs</text></svg></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════════════════════ -->
+  <section class="testimonials section section--gray" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+      </div>
+      <div class="testimonials__grid">
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"Kodekreatif transformed our vision into a polished, scalable platform in record time. Their team's technical depth and communication are unmatched."</p>
+          <div class="testimonial-card__author">
+            <div class="author-avatar author-avatar--1">AR</div>
+            <div>
+              <strong>Ahmad Rifai</strong>
+              <span>CTO, NexaGroup</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"Working with Kodekreatif felt like having a world-class engineering team in-house. They delivered our mobile banking app ahead of schedule with zero compromises on quality."</p>
+          <div class="testimonial-card__author">
+            <div class="author-avatar author-avatar--2">SL</div>
+            <div>
+              <strong>Sarah Lim</strong>
+              <span>Product Lead, PaySwift</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"The attention to detail in both design and code is remarkable. Our HR platform has been rock-solid since launch and our users love the experience."</p>
+          <div class="testimonial-card__author">
+            <div class="author-avatar author-avatar--3">BW</div>
+            <div>
+              <strong>Budi Wiyanto</strong>
+              <span>CEO, TeamPulse</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════════════ -->
+  <section class="about section" id="about">
+    <div class="container about__inner">
+      <div class="about__text">
+        <span class="section-tag">About Us</span>
+        <h2 class="section-title">We're Builders at Heart</h2>
+        <p>Kodekreatif was founded on a simple belief: great software changes businesses. We're a tight-knit team of engineers, designers, and strategists who care deeply about the craft — and even more about your outcomes.</p>
+        <p>We don't just write code. We study your market, understand your users, and architect solutions that evolve with your ambitions. Whether you're a fast-moving startup or an established enterprise, we bring the same level of dedication and excellence to every engagement.</p>
+        <div class="about__values">
+          <div class="value-pill"><span>⚡</span> Performance-first</div>
+          <div class="value-pill"><span>🔒</span> Security-minded</div>
+          <div class="value-pill"><span>📐</span> Design-driven</div>
+          <div class="value-pill"><span>🤝</span> Transparent</div>
+        </div>
+      </div>
+      <div class="about__visual">
+        <div class="about__code-block">
+          <div class="code-header">
+            <span class="code-dot code-dot--red"></span>
+            <span class="code-dot code-dot--yellow"></span>
+            <span class="code-dot code-dot--green"></span>
+            <span class="code-filename">kodekreatif.ts</span>
+          </div>
+          <pre class="code-body"><code><span class="c-keyword">const</span> <span class="c-var">kodekreatif</span> = {
+  <span class="c-prop">mission</span>: <span class="c-str">"Build software that scales"</span>,
+  <span class="c-prop">expertise</span>: [
+    <span class="c-str">"Web Development"</span>,
+    <span class="c-str">"Mobile Apps"</span>,
+    <span class="c-str">"Cloud Architecture"</span>,
+    <span class="c-str">"UI/UX Design"</span>,
+  ],
+  <span class="c-prop">values</span>: {
+    <span class="c-prop">quality</span>: <span class="c-bool">true</span>,
+    <span class="c-prop">transparency</span>: <span class="c-bool">true</span>,
+    <span class="c-prop">innovation</span>: <span class="c-bool">true</span>,
+  },
+  <span class="c-prop">deliver</span>: <span class="c-fn">() =&gt;</span> <span class="c-str">"On time, every time"</span>,
+};</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       TECH STACK
+  ══════════════════════════════════════════════ -->
+  <section class="techstack section section--blue" id="stack">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <span class="section-tag section-tag--light">Our Toolkit</span>
+        <h2 class="section-title">Technologies We Master</h2>
+      </div>
+      <div class="techstack__grid">
+        <div class="tech-item">React</div>
+        <div class="tech-item">Next.js</div>
+        <div class="tech-item">Vue.js</div>
+        <div class="tech-item">TypeScript</div>
+        <div class="tech-item">Node.js</div>
+        <div class="tech-item">Python</div>
+        <div class="tech-item">Go</div>
+        <div class="tech-item">Django</div>
+        <div class="tech-item">React Native</div>
+        <div class="tech-item">Flutter</div>
+        <div class="tech-item">PostgreSQL</div>
+        <div class="tech-item">MongoDB</div>
+        <div class="tech-item">Redis</div>
+        <div class="tech-item">Docker</div>
+        <div class="tech-item">Kubernetes</div>
+        <div class="tech-item">AWS</div>
+        <div class="tech-item">GCP</div>
+        <div class="tech-item">Figma</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       CONTACT / CTA
+  ══════════════════════════════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__text">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Ready to Build Something Great?</h2>
+        <p>Tell us about your project and we'll get back to you within 24 hours with an initial assessment — no strings attached.</p>
+        <div class="contact__info">
+          <div class="contact__info-item">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 8l9 6 9-6M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>hello@kodekreatif.com</span>
+          </div>
+          <div class="contact__info-item">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="11" r="3" stroke="currentColor" stroke-width="1.8"/></svg>
+            <span>Jakarta, Indonesia</span>
+          </div>
+        </div>
+      </div>
+      <form class="contact__form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@company.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service">
+            <option value="">Select a service...</option>
+            <option>Web Application Development</option>
+            <option>Mobile App Development</option>
+            <option>Backend & API Development</option>
+            <option>UI / UX Design</option>
+            <option>Cloud & DevOps</option>
+            <option>Tech Consulting</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Tell Us About Your Project</label>
+          <textarea id="message" name="message" rows="5" placeholder="Describe your idea, goals, and any technical requirements..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg btn--full">
+          Send Message
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="form-success" id="formSuccess">
+          Your message has been sent! We'll be in touch within 24 hours.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">
+          <svg class="nav__logo-img nav__logo-img--light" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Kodekreatif logo">
+            <rect x="14" y="22" width="10" height="56" rx="2" fill="currentColor"/>
+            <rect x="76" y="22" width="10" height="56" rx="2" fill="currentColor"/>
+            <path d="M36 30 L20 50 L36 70" stroke="currentColor" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+            <path d="M64 30 L80 50 L64 70" stroke="currentColor" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+            <rect x="34" y="46" width="32" height="8" rx="2" fill="currentColor"/>
+          </svg>
+          <span class="nav__logo-text">Kodekreatif</span>
+        </a>
+        <p>Building software that scales for businesses that dare to grow.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.165 6.839 9.49.5.09.682-.218.682-.484 0-.236-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.157-1.11-1.465-1.11-1.465-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .269.18.579.688.481C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter/X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Services</h4>
+          <a href="#services">Web Development</a>
+          <a href="#services">Mobile Apps</a>
+          <a href="#services">Backend & API</a>
+          <a href="#services">UI/UX Design</a>
+          <a href="#services">Cloud & DevOps</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="#about">About Us</a>
+          <a href="#work">Our Work</a>
+          <a href="#clients">Clients</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <a href="mailto:hello@kodekreatif.com">hello@kodekreatif.com</a>
+          <span>Jakarta, Indonesia</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>© 2026 Kodekreatif. All rights reserved.</span>
+        <span>Crafted with precision & passion.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

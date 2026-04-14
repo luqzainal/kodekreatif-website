@@ -1,0 +1,8 @@
+# Claude AI files
+.claude/
+
+# Unrelated projects
+Project-AI-MemoryCore/
+
+# Screenshots
+Screenshot*.png
